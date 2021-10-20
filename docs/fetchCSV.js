@@ -13,7 +13,7 @@ $(document).ready(function (datasource) {
 	myConnector.getSchema = function (schemaCallback) {
 
 		var source = tableau.connectionData;
-		
+		console.log(source);
 		$.ajax({
 			url: source,
 			dataType: "text"
