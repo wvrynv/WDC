@@ -6,7 +6,7 @@ $(document).ready(function (datasource) {
 	
 	$('#CSV').on('change keyup paste click', function() {
     indicator = $('#CSV').val();
-	datasource = "http://localhost:8889/" + indicator;
+	datasource = "http://localhost:3000/" + indicator;
 	tableau.connectionData = datasource;
 	});
 	
